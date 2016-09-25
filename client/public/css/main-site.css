@@ -1,0 +1,82 @@
+body {
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.glyphicon {
+  font-size: 2em;
+  margin-right: 1em;
+  color: white;
+}
+
+.glyphicon:hover {
+  box-shadow: 0px 0px 8px 1.5px grey;
+}
+
+.glyphicon:active {
+  box-shadow: inset 1px 1px 1px grey;
+}
+
+.container {
+  padding-left: 0;
+  margin-left: 2%;
+}
+
+.category-header__bar {
+  background-color: #3399ff;
+  height: 6em;
+  margin-top: 0px;
+  margin-bottom: 3em;
+  display: flex;
+  box-shadow: 0px 3px 1px 1px grey;
+}
+
+.category-header__text {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.category-body__text {
+  color: black;
+  font-size: 2em;
+}
+
+.site-header {
+  background-color: #3399ff;
+  margin-bottom: 2em;
+  height: 12em;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.header-bar__container {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-bar__main {
+  color: #FFFFFF;
+  font-family: Helvetica, sans-serif;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.content-box {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  height: 50em;
+  box-shadow: 0 0 5px 1px grey;
+}
