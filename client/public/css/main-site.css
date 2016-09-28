@@ -17,6 +17,10 @@ a.menu-button {
   width: 20em;
 }
 
+input {
+  max-width: 100%;
+}
+
 textarea {
   max-width: 100%;
   max-height: 15em;

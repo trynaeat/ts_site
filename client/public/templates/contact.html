@@ -1,14 +1,14 @@
 <div class="alert" uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
 <div class="container">
   <div class="row">
-    <div class="col-md-12 col-xs-11">
+    <div class="col-md-12 col-xs-12 col-lg-12">
       <div class="row content-box single-height">
         <div class="category-header__bar">
           <h2 class="category-header__text">Contact</h2>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6 col-xs-8 col-sm-8">
             <form name="form" ng-submit="submitForm()" novalidate>
                 <div class="form-group" ng-class="{ 'has-error' : form.name.$invalid && !form.name.$pristine }">
                   <label>Name</label>
