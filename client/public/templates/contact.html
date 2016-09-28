@@ -1,0 +1,39 @@
+<div class="alert" uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-xs-11">
+      <div class="row content-box single-height">
+        <div class="category-header__bar">
+          <h2 class="category-header__text">Contact</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+            <form name="form" ng-submit="submitForm()" novalidate>
+                <div class="form-group" ng-class="{ 'has-error' : form.name.$invalid && !form.name.$pristine }">
+                  <label>Name</label>
+                  <input type="text" class="form-control" name="name" placeholder="Name" ng-model="emailForm.name" required></input>
+                  <p ng-show="form.name.$invalid && !form.name.$pristine" class="help-block">Your name is required.</p>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error' : form.subject.$invalid && !form.subject.$pristine }">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" ng-model="emailForm.subject" required></input>
+                  <p ng-show="form.subject.$invalid && !form.subject.$pristine" class="help-block">Subject is required.</p>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error' : form.body.$invalid && !form.body.$pristine }">
+                  <label for="body">Body</label>
+                  <textarea class="form-control" name="body" rows="8" cols="50" ng-model="emailForm.body" ng-trim="false" maxlength="2000" required></textarea>
+                  <span class="form-help" ng-hide="form.body.$invalid && !form.body.$pristine">Characters remaining: {{2000 - emailForm.body.length}}</span>
+                  <p ng-show="form.body.$invalid && !form.body.$pristine" class="help-block">No message at all? Really?</p>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-default" ng-disabled="form.$invalid">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

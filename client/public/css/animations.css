@@ -1,0 +1,4 @@
+@keyframes show_menu {
+  from { left: -2em; }
+  to { left: 0; }
+}

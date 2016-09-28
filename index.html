@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/client/public/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/client/public/css/main-site.css" />
+<body ng-app="ts" ng-controller="rootController">
+  <header class="site-header">
+    <div class="header-bar__container">
+      <span class="glyphicon glyphicon-th-list" style="display: inline;" ng-click="toggleMenu()"></span>
+      <h1 class="header-bar__main">Team Glenn</h1>
+    </div>
+  </header>
+  <div class="side-menu" ng-show="showMenu">
+    <ul class="nav nav-pills nav-stacked white">
+      <li role="presentation"><a href="/home" ng-click="toggleMenu()" class="menu-button">Home</a></li>
+      <li role="presentation"><a href="/home/about" ng-click="toggleMenu()" class="menu-button">About</a></li>
+      <li role="presentation"><a href="/home/contact" ng-click="toggleMenu()" class="menu-button">Contact</a></li>
+    </ul>
+  </div>
+  <div ng-view></div>
+
+</body>
+
+<script src="/client/public/js/angular.min.js"></script>
+<script src="/client/public/js/angular-route.min.js"></script>
+<script src="/client/public/js/ui-bootstrap-tpls-2.1.3.min.js"></script>
+<script src="/client/public/app.js"></script>
+<script src="/client/public/js/controllers/homeController.js"></script>
+<script src="/client/public/js/controllers/contactController.js"></script>
